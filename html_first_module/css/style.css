@@ -1,0 +1,17 @@
+body
+{
+    background-color: #66BFBF;
+}
+
+hr
+{
+    width: 30%;
+    border-style: dotted none none;
+    border-width: 5px;
+    border-color: gray;
+}
+
+input
+{
+    border-radius: 10px;
+}
