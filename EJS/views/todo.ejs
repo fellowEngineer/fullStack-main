@@ -1,0 +1,32 @@
+
+<!-- header layout from views -->
+<%- include("layouts/header") -%> 
+
+<body  class="text-center">
+
+  <div class="box" id="heading">
+    <h1 class=""><%= day.today %> </h1>
+  </div>
+
+
+  <div class="box">
+    <% for(let i = 0; i < day.todos.length; i++) {%> 
+      <div class="item">
+        <input type="checkbox">
+        <p> <%= day.todos[i] %> </p>
+      </div>
+    <% } %> 
+
+
+    <form class="item " action="/" method="post">
+      <input type="text" name="new_todo" placeholder="new todos">
+      <button  class="" type="submit" name="sub_btn" value=<%= day.today %> %> >+</button>
+    </form>
+
+  </div>
+
+</body>
+ 
+
+<!-- header layout from views -->
+<%- include("layouts/footer") -%> 
