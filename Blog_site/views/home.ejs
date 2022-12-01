@@ -6,9 +6,10 @@
 
 <h1>This is a massage from Home.</h1>
 
-
-    <p><%= blogs %> </p> 
-
+    <% for(let i = 0; i < blogs.length; i++) {%> 
+        <p><%= blogs[i].title %> </p>
+        <p><%= blogs[i].content %> </p> <br>
+    <% } %> 
 
 
 
