@@ -30,6 +30,17 @@ app.get("/", (req, res) => {
 
 
 
+app.get("/p/about", (req, res) => {
+  res.render("pages/about");
+})
+
+app.get("/p/contact", (req, res) => {
+  res.render("pages/contact");
+})
+
+
+
+
 
 const port = 4000;
 
