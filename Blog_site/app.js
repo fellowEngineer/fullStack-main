@@ -10,6 +10,9 @@ const aboutContent = "Hac habitasse platea dictumst vestibulum rhoncus est pelle
 const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
 
 
+const Blogs = [];
+
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -36,6 +39,33 @@ app.get("/p/contact", (req, res) => {
   res.render("pages/contact", {blogs: contactContent});
 })
 
+
+app.get("/compose", (req, res) => {
+  res.render("pages/compose");
+
+})
+
+app.post("/compose", (req, res) => {
+
+  const composedTitle = req.body.newComposedTitle;
+  const composedPost = req.body.newComposedContent
+
+
+  if(composedTitle != "" && composedPost != "")
+  {
+    const post = {
+      title: composedTitle, 
+      content: composedPost
+    };
+    
+    console.log(post);
+    Blogs.push(post);
+
+  }
+  
+
+  res.redirect("/compose");
+})
 
 
 
