@@ -1,0 +1,19 @@
+<%- include("../layouts/header") -%>
+
+
+
+
+<h1>This is a massage from compose.</h1>
+<form action="/compose" method="post">
+
+    <label for="composedTitile">Title</label>
+    <input class="form-control" type="text" name="newComposedTitle" id="composedTitile" placeholder="Type the title of your post"><br>
+
+    <label for="composedContent">Post</label>
+    <textarea class="form-control" id="composedContent" name="newComposedContent" rows="10" cols="170" placeholder="Type your blogs here"></textarea><br>
+    
+    <button class="btn btn-primary" type="submit" name="btnComposed">Publish</button>
+</form>
+
+
+<%- include("../layouts/footer") -%>
