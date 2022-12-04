@@ -6,10 +6,12 @@
 
 <h1>This is a massage from Home.</h1>
 
-    <% for(let i = 0; i < blogs.length; i++) {%> 
-        <p><%= blogs[i].title %> </p>
-        <p><%= blogs[i].content %> </p> <br>
-    <% } %> 
+    <% blogs.forEach( (blog) => {%> 
+        <h1><%= blog.title %></h1>
+        <p><%= blog.content.slice(0,100) + " ..." %> 
+            <a href="/posts/<%= blog.title %>"  >Read more</a>
+        </p>
+    <% }) %> 
 
 
 
