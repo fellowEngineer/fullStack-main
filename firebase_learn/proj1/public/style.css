@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+
+#mainframe{
+    border: 1px solid gray;
+
+    margin: auto;
+    margin-top: 10px;
+    padding: 1%;
+    width: 30%;
+}
+
+#inputEmail,#inputPassword{
+    width : 100%;
+}
+.pkt{
+    text-align: left;
+}

@@ -1,0 +1,23 @@
+<%- include("template/header") -%> 
+
+<h1>General Information : </h1>
+<% resArr.forEach(e => { %>
+
+    <section id="infocard" class="mx-auto">
+        <div class="">
+            <h3>Name : <span> <%= e.name  %> </span> </h3>
+            <h3>Email : <span><%= e.email  %> </span></h3>
+            <h3>Password : <span><%= e.pass  %> </span></h3>
+            <h3>Mobile : <span><%= e.mobile  %> </span></h3>
+            <h3>Gender : <span><%= e.gender  %> </span></h3>
+            <h3>Nickname : <span><%= e.nickname  %> </span></h3>
+        </div>
+    </section>
+    <br><br>
+
+<% }) %> 
+    
+    
+
+
+<%- include("template/footer") -%> 
