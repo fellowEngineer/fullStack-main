@@ -1,0 +1,24 @@
+<%- include("template/header") -%> 
+
+<section id="mainframe">
+    <form action="/delete" method="post">
+        
+        <div class="mb-3 pkt">
+            <label for="inputEmail1" class="form-label">Email address</label>
+            <input type="email" name="inputEmail" class="form-control" id="inputEmail" aria-describedby="emailHelp" autocomplete="off" placeholder="example@example.com" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="mb-3 pkt">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" name="inputPassword" class="form-control" id="inputPassword" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Delete Account</button>
+    </form>
+</section>
+
+
+
+
+<%- include("template/footer") -%> 

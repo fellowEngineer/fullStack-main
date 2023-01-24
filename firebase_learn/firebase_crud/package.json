@@ -1,0 +1,16 @@
+{
+  "name": "firebase_crud",
+  "version": "1.0.0",
+  "description": "crud with firebase",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fellowengineer youtube",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase": "^9.16.0"
+  }
+}
